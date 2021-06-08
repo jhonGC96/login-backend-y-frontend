@@ -1,0 +1,55 @@
+<div class="container">
+    <table class="table align-middle text-center mt-4 caption-top" id="tablaFlujo">
+        <thead class="thead-dark">
+            <tr class="bg-primary text-white">
+                <th scope="col"></th>
+                <td>
+
+                </td>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TITULOS</td>
+                <td><input class="form-control text-center " type="text" placeholder="tituloFE [STRING]" id="tituloFE"
+                        required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>INGRESOS</td>
+                <td><input class="form-control text-center " type="text" placeholder="ingresosFE=[DECIMAL]" required>
+                </td>
+                <td><input class="form-control text-center " type="text" placeholder="sumFE.ingresos" disabled></td>
+            </tr>
+            <tr>
+                <td>EGRESOS</td>
+                <td><input class="form-control text-center " type="text" placeholder="egresosFE=totCD.mes+totGA.mes"
+                        disabled></td>
+                <td><input class="form-control text-center " type="text" placeholder="sumFE.egreso" disabled></td>
+            </tr>
+            <tr>
+                <td>TOTAL</td>
+                <td><input class="form-control text-center " type="text" placeholder="totalFE=ingresosFE-egresosFE[-R]"
+                        disabled></td>
+                <td><input class="form-control text-center " type="text" placeholder="sumFE.total" disabled></td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <tr class="bg-primary text-white" class="thead-dark">
+                <td scope="col">ACUMULADO</th>
+                <td><input class="form-control text-center " type="text" placeholder="acumFE+=totalFE" disabled></td>
+                <td scope="col">
+                    </th>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="d-flex justify-content-evenly">
+        <button type="button" class="btn btn-outline-primary col-md-4" onclick="agregarColumna()"><i
+                class='bx bxs-plus-circle'></i> AGREGAR MES</a>
+        <button type="button" class="btn btn-outline-danger col-md-4" onclick="eliminarColumna()"><i
+                class='bx bxs-plus-circle'></i> ELIMINAR MES</a>
+    </div>
+</div>
+
+<script src="js/columanFila.js"></script>

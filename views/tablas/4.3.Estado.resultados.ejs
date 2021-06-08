@@ -1,0 +1,50 @@
+<div class="container">
+    <table class="table align-middle table-hover text-center mt-4 caption-top">
+        <caption class="h3">Estado de Resultados</caption>
+        <thead  class="thead-dark">
+            <tr class="bg-primary text-white">
+                <th scope="col"></th>
+                <th scope="col">MES 1</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TITULOS</td>
+                <td><input class="form-control text-center " type="text" placeholder="tituloFE [STRING]" id="tituloER"
+                        required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VENTAS</td>
+                <td><input class="form-control text-center " type="text" placeholder="ventasER=totIn.mes id=" ventasER"
+                        disabled></td>
+                <td><input class="form-control text-center " type="text" placeholder="sumER.ventas" id="sumER.ventas"
+                        disabled></td>
+            </tr>
+            <tr>
+                <td>COSTOS</td>
+                <td><input class="form-control text-center " type="text" placeholder="costosER=totCD.mes+totGA.mes"
+                        id="costosER" disabled></td>
+                <td><input class="form-control text-center " type="text" placeholder="sumER.costos" id="sumER.costos"
+                        disabled></td>
+            </tr>
+            <tr>
+                <td>MARGEN</td>
+                <td><input class="form-control text-center " type="text" placeholder="margenER=ventasER-costosER[-R]"
+                        id="margenER" disabled></td>
+                <td><input class="form-control text-center " type="text" placeholder="sumER.margen" id="sumER.margen"
+                        disabled></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="bg-primary text-white">
+                <td scope="col">SALDO FINAL</th>
+                <td><input class="form-control text-center " type="text" placeholder="acumER+=margenER" id="acumER"
+                        disabled></td>
+                <td scope="col">
+                    </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

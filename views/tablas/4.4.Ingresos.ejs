@@ -1,0 +1,34 @@
+<div class="container">    
+    <table class="table align-middle table-hover text-center mt-4 caption-top" id="tablaprueba">
+      <caption class="h3">Ingresos</caption>
+      <thead class="thead-dark">
+        <tr class="bg-primary text-white">
+          <th scope="col">CONCEPTO</th>
+          <th scope="col">MES 1</th>
+          <th scope="col">TOTAL</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td><input class="form-control text-center " type="text" placeholder="tituloIn" id="tituloIn"  required></td>
+          <td><input class="form-control text-center " type="text" placeholder="conceptoIn" id="conceptoIn"  required></td>
+          <td><input class="form-control text-center " type="text" placeholder="sumIn.concepto" id="sumIn.concepto"  disabled></td>
+          <td><a onclick="eliminar('')" class="btn btn-outline-danger"><i class='bx bxs-trash-alt'></i></a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="bg-primary text-white">
+          <td scope="col">TOTAL</th>
+          <td><input class="form-control text-center " type="text" placeholder="totIn.mes+=conceptoIn" id="totIn.mes"  disabled></td>
+          <td><input class="form-control text-center " type="text" placeholder="sumIn.total" id="sumIn.total"  disabled></td>
+          <td scope="col"></th>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="d-flex justify-content-evenly">
+      <button type="button" class="btn btn-outline-primary col-md-4" onclick="agregarFila()"><i class='bx bxs-plus-circle'></i>AGREGAR FILA</a>
+    </div>
+  </div>
+ 
+  <script src="js/columnaFila.js"></script>

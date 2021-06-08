@@ -1,0 +1,28 @@
+<div class="container">
+    <table class="table align-middle table-hover text-center mt-4 caption-top">
+        <thead class="thead-dark">
+            <tr class="bg-primary text-white">
+                <th scope="col"></th>
+                <th scope="col">MES 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>VENTAS</td>
+                <td>ventasRF=ingresosFE</td>
+            </tr>
+            <tr>
+                <td>COSTOS</td>
+                <td>costosRF=egresosFE</td>
+            </tr>
+            <tr>
+                <td>MARGEN</td>
+                <td>margenRF=ventasRF-costosRF [-R]</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>porcenRF=margenRF/ventasRF</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

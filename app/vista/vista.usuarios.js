@@ -52,7 +52,6 @@ module.exports = (app) => {
         let update = req.params.id_usuario
         //Control de errores
         try {
-
             let resultado = await controladorUsuario.updateUsuario(update)
             res.render('editarusuario', {
                 data: resultado[0]

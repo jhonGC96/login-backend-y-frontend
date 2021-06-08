@@ -1,0 +1,37 @@
+<div class="container">   
+    <table class="table align-middle table-hover text-center mt-4 caption-top">
+      <caption class="h3">Recursos</caption>
+      <thead class="thead-dark">
+        <tr class="bg-primary text-white">
+          <th scope="col">NOMBRE ROL</th>
+          <th scope="col">MES 1</th>
+          <th scope="col"></th>
+          <th scope="col">TOTAL</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control text-center " type="text" placeholder="nobreRe" id="nobreRe"  required></td>
+          <td><input class="form-control text-center " type="text" placeholder="asignacionRe" id="asignacionRe"  required></td>
+          <td><input class="form-control text-center " type="text" placeholder="costosRe" id="costosRe"  required></td>
+          <td><input class="form-control text-center " type="text" placeholder="sumRe.rol" id="sumRe.rol"  disabled></td>
+          <td><a onclick="eliminar('')" class="btn btn-outline-danger"><i class='bx bxs-trash-alt'></i></a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="bg-primary text-white">
+          <td scope="col">TOTAL</th>
+            <td><input class="form-control text-center " type="text" placeholder="totRe.mes" id="totRe.mes" disabled></td>
+            <td><input class="form-control text-center " type="text" placeholder="sumRe.total" id="sumRe.total"  disabled></td>
+          <td scope="col"></th>
+          <td scope="col"></th>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="d-flex justify-content-evenly">
+      <a href="/" class="btn btn-outline-primary col-md-4"><i class='bx bxs-plus-circle'></i> AGREGAR</a>
+    </div> 
+  </div>
+
+  <script src="js/eliminar.js"></script>
